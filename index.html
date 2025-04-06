@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SteakHouse Project</title>
+  <!-- css links -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- swiper cdn -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<!-- splide cdn -->
+<link
+href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+rel="stylesheet"
+/>
+<!-- aos cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<!-- box-icons -->
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<!-- page icon -->
+<link rel="icon" href="Logos/favicon.png">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">
+       <a  class="main-logo" href=""><img src="Logos/logo.png" alt=""></a> 
+       <a class="sticky-logo"  href=""><img src="Logos/logo-1.png" alt=""></a> 
+      </div>
+        <ul class="nav-links">
+          <li class="dropdown">
+            <div class="links">
+              <a href="#">Home</a>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <ul class="dropdown-content" id="home">
+              <li><a href="#">Home1</a></li>
+              <li><a href="#">Home2</a></li>
+              <li><a href="#">Home3</a></li>
+              <li><a href="#">Home4</a></li>
+              <li><a href="#">Home5</a></li>
+            </ul>
+          </li>
+  
+          <li class="dropdown">
+            <div class="links">
+              <a href="#">Pages</a>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <ul class="dropdown-content">
+              <li><a href="#">Package grid</a></li>
+              <li><a href="#">Package sidebar</a></li>
+              <li><a href="#">Package topsearch</a></li>
+              <li><a href="#">Package catagory</a></li>
+              <li><a href="#">Package details</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <div class="links">
+              <a href="#">Menus</a>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <ul class="dropdown-content">
+              <li><a href="#">Destination style1</a></li>
+              <li><a href="#">Destination style2</a></li>
+              <li><a href="#">Destination style3</a></li>
+              <li><a href="#">Destination style4</a></li>
+              <li><a href="#">Destination style5</a></li>
+              <li><a href="#">Destination details</a></li>
+            </ul>
+          </li>
+    
+          <li class="dropdown">
+            <div class="links">
+              <a href="#">Blog</a>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <ul class="dropdown-content">
+              <li><a href="#">Hotel</a></li>
+              <li><a href="#">Activities</a></li>
+              <li><a href="#">Transport</a></li>
+              <li><a href="#">Visa</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Tour Guide</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="#">Gallary</a></li>
+              <li><a href="#">FAQ's</a></li>
+              <li><a href="#">Error</a></li>
+            </ul>
+          </li>
+          <div class="links">
+            <a href="#">Elements</a>
+          </div>
+        </ul>
+        <div class="sidebar">
+          <div class="sidebar-toggle">
+            <i class='bx bx-x sidebar-close'></i>
+          </div>
+          <ul class="sidebar-links">
+            <li><a href="">Home</a></li>
+            <li><a href="">Pages</a></li>
+            <li><a href="">Menus</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Elements</a></li>
+          </ul>
+        </div>
+      <div class="icons">
+        <div class="shopping-container">
+          <i class="fa-solid fa-cart-shopping cart-logo"></i>
+        <div class="shopping-list">
+            <ul class="shopping-cart">
+              <li class="shopping-item">
+                <img src="menu/1.jpg" alt="">
+                <div class="shopping-info">
+                  <div class="cart-item">
+                    <h4>Grilled Hamburgers</h4>
+                  <span>$12.99</span>
+                  </div>
+                  <div class="count-item">
+                    <span>X 1</span>
+                  </div>
+                </div>
+              </li>
+              <li class="shopping-item">
+                <img src="menu/2.jpg" alt="">
+                <div class="shopping-info">
+                  <div class="cart-item">
+                  <h4>Shinbone beef</h4>
+                  <span>$15.00</span>
+                  </div>
+                  <div class="count-item">
+                    <span>X 2</span>
+                  </div>
+                </div>
+              </li>
+              <li class="shopping-item">
+                <img src="menu/3.jpg" alt="">
+                <div class="shopping-info">
+                  <div class="cart-item">
+                  <h4>Grilled skewers</h4>
+                    <span>$15.99</span>
+                    </div>
+                    <div class="count-item">
+                      <span>X 1</span>
+                    </div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="shopping-buttons">
+              <a href="#" class="btn">View Cart</a>
+              <a href="#" class="btn">Checkout</a>
+          </div>
+        </div>
+        </div>
+        <div class="search-container">
+          <div class="search-toggle">
+            <i class='bx bx-x cancel'></i>
+            <i class="fa-solid fa-magnifying-glass search"></i>
+          </div>
+          <div class="search-field">
+            <input type="text" placeholder="Search">
+          </div>
+        </div>
+        
+        <div class="languages">
+          <img src="language logos/en.png" alt=""><a href="#">EN</a>
+          <div class="italian">
+            <img src="language logos/it.png" alt=""><a  href="#">IT</a>
+          </div>
+          
+          
+          
+        </div>
+      </div>
+      <i class="fa-solid fa-bars sidebar-open"></i>
+      
+    </nav>
+  </header>
+  <main>
+    <section class="banner">
+      <div class="container" >
+        <div class="content" data-aos="fade-right">
+          <h1>Delicious Italian Home Made Cuisine</h1>
+          <span>Ratione numquam. Fugiat alias saepe fuga odio sed exauris, minim anim dolores earum! Veniam corporis cupidatat atque nesciunt dicta justoui varius loreto martino con sostanza e progolo.</span>
+          <div class="content-buttons">
+            <a href="#" class="btn">view Menu</a>
+          <a href="#" class="btn">Reserve Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="clouds">
+        <div class="small-cloud"></div>
+        <div class="big-cloud"></div>
+      </div>
+    </section>
+    
+    <section class="features">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="feature">
+            <i class='bx bxs-hot' ></i>
+            <div class="feature-content">
+              <h2>Original barbeque</h2>
+              <p>Eleifend quod do nostrum fermentum reprehenderito mato.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <i class='bx bxs-id-card' ></i>
+            <div class="feature-content">
+              <h2>Starred cooks</h2>
+              <p>Odit eleifend quod do nostrum fermentum reprehenderito.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <i class='bx bxs-time-five' ></i>
+            <div class="feature-content">
+              <h2>
+                Open all week</h2>
+              <p>Maleifend quod do nostrum fermentum repreherito mato.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <i class='bx bx-music' ></i>
+            <div class="feature-content">
+              <h2>
+                Country music</h2>
+              <p>Fermentum repre henderit inim solli citudin maopro..</p>
+            </div>
+          </div>
+        </div>
+        
+       
+      </div>
+    </section>
+  
+    <section class="menu">
+      <div class="container">
+        <p id="menu-sub-heading">Take a look to the best of the meals</p>
+        <div class="menu-header">
+          <div class="heading">
+            <h2>Top Specialities</h2>
+          </div>
+          <div class="menu-buttons">
+          <a href="#" class="menu-btn">Book a Tabale</a>
+          <a href="#" class="menu-btn">Full Menu</a>
+          </div>
+          
+        </div>
+        <div class="menu-content" data-aos="flip-down">
+          <div class="menu-item">
+            <div class="menu-img">
+              <img src="menu/1.jpg" alt="">
+              <span>$12.99</span>
+              
+            </div>
+            <h3>Grilled Hamburgers</h3>
+            <p>Meat on skewer water spinach okra water chestnut ricebean chips and onion.</p>
+            
+          </div>
+          <div class="menu-item">
+            <div class="menu-img">
+              <img src="menu/2.jpg" alt="">
+              <span>$15.00</span>
+            </div>
+            <h3>Shinbone beef</h3>
+            <p>Meat on skewer water spinach okra water chestnut ricebean chips and onion.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-img">
+              <img src="menu/3.jpg" alt="">
+              <span>$15.99</span>
+            </div>
+            <h3>Grilled skewers</h3>
+            <p>Meat on skewer water spinach okra water chestnut ricebean chips and onion.</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-img">
+              <img src="menu/4.jpg" alt="">
+              <span>$12.99</span>
+            </div>
+            <h3>Steak and chips</h3>
+            <p>Meat on skewer water spinach okra water chestnut ricebean chips and onion.</p>
+        </div>
+          <div class="menu-item">
+            <div class="menu-img">
+              <img src="menu/5.jpg" alt="">
+              <span>$17.99</span>
+            </div>
+            <h3>Skewers of meat</h3>
+            <p>Meat on skewer water spinach okra water chestnut ricebean chips and onion.</p>
+            
+          </div>
+          <div class="menu-item">
+            <div class="menu-img">
+              <img src="menu/6.jpg" alt="">
+              <span>$9.99</span>
+            </div>
+            <h3>Pork beef</h3>
+            <p>Meat on skewer water spinach okra water chestnut ricebean chips and onion.</p>
+           
+      </div>
+    </section>
+  
+    <section class="about">
+        
+        <div class="about-header" data-aos="zoom-in-up">
+          <p>Delecious plates for you</p>
+          <div class="heading">
+            <h2>Food Menu</h2>
+            <p>Tincidunt integer eu augue augue nunc elit dolor luctus placerat scelerisque euismod iaculis eu lacus vehiculautlaoreet ac, aliquam sit amet justo nunc tempor metus velio Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor luctus placerat scelerisque euismod incididunto.</p>
+          </div>
+          <div class="about-cards">
+            <div class="contacts">
+              <i class='bx bx-conversation' ></i>
+              <h3>Write Us</h3>
+              <p>info@resturant.com</p>
+            </div>
+          <div class="contacts">
+            <i class='bx bx-map-pin'></i>
+            <h3>Find Us</h3>
+            <p>info@resturant.com</p>
+          </div>
+          <div class="contacts">
+            <i class='bx bx-phone-call'></i>
+            <h3>Write Us</h3>
+            <p>+02 3351569887</p>
+          </div>
+        </div>
+        <a class="about-btn" href="#">Read More</a>
+      </div>
+    </section>
+  
+    <section class="book-table">
+      <div class="container" data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine">
+        <div class="booking">
+          <p>A place reserved only for you</p>
+          <h3>Book a Table</h3>
+        </div>
+      </div>
+    </section>
+  
+  
+    <section class="menu-items">
+      
+      <div class="container">
+        <div class="menu-items-header">
+          <div class="menu-chart-heading">
+            <p>Enjoy a true steakhouse experience</p>
+            <h2>Our Complete Menu</h2>
+          </div>
+        </div>
+        <div class="menu-items-content">
+          <div class="menu-charts" data-aos="zoom-out-right">
+            <ul class="menu-chart">
+              <li class="menu-chart-item">
+                <div class="menu-info">
+                  <h4>Ocean trout in saffron</h4>
+                <p>Lorem ipsum dolor sit ameto consectetur adipiscing elit </p>
+                </div>           
+              </li>
+              <li>21$</li>
+            </ul>
+            <ul class="menu-chart">
+              <li class="menu-chart-item">
+                <div class="menu-info">
+                  <h4>Grilled beef fillet</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                </div>
+              </li>
+              <li>21$</li>
+            </ul>
+            <ul class="menu-chart">
+              <li class="menu-chart-item">
+                <h4>Crispy skin Cone</h4>
+                <p>Lorem ipsum dolor sit</p>
+              </li>
+              <li>4.99$</li>
+            </ul>
+            <ul class="menu-chart">
+              <li class="menu-chart-item">
+                <div class="menu-info">
+                  <h4>Slow roasted veal</h4>
+                <p>Lorem ipsum dolor sit </p>
+                </div>
+              </li>
+              <li>49$</li>
+            </ul>
+            <ul class="menu-chart">
+              <li class="menu-chart-item">
+                <div class="menu-info">
+                  <h4>Seared blue eye</h4>
+                <p>Sunt in culpa qui deserunt</p>
+                </div>
+              </li>
+              <li>10$</li>
+            </ul>
+            <ul class="menu-chart">
+              <li class="menu-chart-item">
+                <div class="menu-info">
+                  <h4>Wild mushroom ragout</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit </p>
+                </div>
+              </li>
+              <li>21$</li>
+            </ul>
+            <ul class="menu-chart">
+              <li class="menu-chart-item">
+                <div class="menu-info">
+                  <h4>Roast spatchcock</h4>
+                <p>Excepteur sint occaecat cupidatat non proident</p>
+                </div>
+              </li>
+              <li>15$</li>
+            </ul>
+            <ul class="menu-chart">
+              <li class="menu-chart-item">
+                <div class="menu-info">
+                  <h4>Steamed jasmine rice</h4>
+                <p>Sunt in culpa qui deserunt</p>
+                </div>
+              </li>
+              <li>10$</li>
+            </ul>
+            <ul class="menu-chart">
+              <li class="menu-chart-item">
+                <div class="menu-info">
+                  <h4>Wild mushroom ragout</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                </div>
+              </li>
+              <li>21$</li>
+            </ul>
+            <ul class="menu-chart">
+              <li class="menu-chart-item">
+                <div class="menu-info">
+                  <h4>Butter poached scampi</h4>
+                <p>Excepteur sint occaecat cupidatat non proident</p>
+                </div>
+              </li>
+              <li>50$</li>
+            </ul>
+          
+          </div>
+          <div class="menu-big-img" data-aos="fade-left">
+            <img src="menu chart/food-6.jpg" alt="">
+          </div>
+        </div>
+        <div class="menu-items-content2">
+          <div class="menu-charts" data-aos="fade-left">
+            <ul class="menu-chart">
+              <li class="menu-chart-item">
+                <div class="menu-info">
+                  <h4>Slow roasted white</h4>
+                <p>Duis aute irure dolor in reprehenderit i esse</p>
+                </div>
+              </li>
+              <li>9.5$</li>
+            </ul>
+            <ul class="menu-chart">
+              <li class="menu-chart-item">
+                <div class="menu-info">
+                  <h4>Steamed king crab</h4>
+                <p>Duis aute irure dolor in reprehenderit in voluptate</p>
+                </div>
+              </li>
+              <li>9$</li>
+            </ul>
+            <ul class="menu-chart">
+              <li class="menu-chart-item">
+                <div class="menu-info">
+                  <h4>Grass beef fillet</h4>
+                <p>Lorem ipsum dolor sit</p>
+                </div>
+              </li>
+              <li>9$</li>
+            </ul>
+            <ul class="menu-chart">
+              <li class="menu-chart-item">
+                <div class="menu-info">
+                  <h4>Roast partridge</h4>
+                <p>Lorem ipsum dolor sit</p>
+                </div>
+              </li>
+              <li>9$</li>
+            </ul>
+            <ul class="menu-chart">
+              <li class="menu-chart-item">
+                <div class="menu-info">
+                  <h4>Deboned king quail</h4>
+                <p>Sunt in culpa qui deserunt</p>
+                </div>
+              </li>
+              <li>10$</li>
+            </ul>
+            <ul class="menu-chart">
+              <li class="menu-chart-item">
+                <div class="menu-info">
+                  <h4>Salad of shaved fenne</h4>
+                <p>Sunt in culpa qui officia</p>
+                </div>
+              </li>
+              <li>10$</li>
+            </ul>
+            <ul class="menu-chart">
+              <li class="menu-chart-item">
+                <div class="menu-info">
+                  <h4>Confit of lamb</h4>
+                <p>Excepteur sint occaecat cupidatat non proident</p>
+                </div>
+              </li>
+              <li>15$</li>
+            </ul>
+            <ul class="menu-chart">
+              <li class="menu-chart-item">
+                <div class="menu-info">
+                  <h4>Beetroot cured kingfish</h4>
+                <p>Excepteur sint occaecat cupidatat non proident</p>
+                </div>
+              </li>
+              <li>10$</li>
+            </ul>
+            <ul class="menu-chart">
+              <li class="menu-chart-item">
+                <div class="menu-info">
+                  <h4>Twice cooked duck</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                </div>
+              </li>
+              <li>21$</li>
+            </ul>
+            <ul class="menu-chart">
+              <li class="menu-chart-item">
+                <div class="menu-info">
+                  <h4>Wild mushroom ragout</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                </div>
+              </li>
+              <li>21$</li>
+            </ul>
+          
+          </div>
+          <div class="menu-big-img" data-aos="zoom-out-right">
+            <img src="menu chart/food-7.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="testimonials">
+      <div class="container" data-aos="fade-up">
+        <div class="menu-items-header">
+          <div class="menu-chart-heading slider-heading">
+            <p>Take a look to the news food promotions</p>
+            <h2>Our testimonials</h2>
+          </div>
+        </div>
+      </div>
+      <div class="first-slider">
+        <section class="splide splide1 splidemain">
+          <div class="splide__slider">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="splide-img">
+                    <img src="paralax/slider1/image-31.jpg" alt="image"
+                  />
+                  </div>
+                  <div class="slider-info">
+                    <p>$12.99</p>
+                    <h4>Grilled Hamburgers</h4>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide-img">
+                    <img src="paralax/slider1/image-32.jpg" alt="image" />
+                  </div>
+                  <div class="slider-info">
+                    <p>$15.00</p>
+                    <h4>Shinbone beef</h4>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide-img">
+                    <img src="paralax/slider1/image-33.jpg" alt="image" />
+                  </div>
+                  <div class="slider-info">
+                    <p>$15.00</p>
+                    <h4>Grilled skewers</h4>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide-img"><img src="paralax/slider1/image-34.jpg" alt="image" /></div>
+                  <div class="slider-info">
+                    <p>$19.99</p>
+                    <h4>Steak and chips</h4>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide-img"><img src="paralax/slider1/image-35.jpg" alt="image" /></div>
+                  <div class="slider-info">
+                    <p>$17.99</p>
+                    <h4>Skewers of meat</h4>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide-img"><img src="paralax/slider1/image-36.jpg" alt="image" />
+                    <div class="slider-info">
+                      <p>$9.99</p>
+                      <h4>Pork beef</h4>
+                    </div></div>
+                  
+                </li>
+              </ul>
+            </div>
+          </div>
+      </div>
+      <div class="second-slider">
+        <section class="splide splide2 splidemain">
+          <div class="splide__slider">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="splide-img">
+                    <img src="paralax/slider1/image-31.jpg" alt="image"
+                  />
+                  </div>
+                  <div class="slider-info">
+                    <p>$12.99</p>
+                    <h4>Grilled Hamburgers</h4>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide-img">
+                    <img src="paralax/slider1/image-32.jpg" alt="image" />
+                  </div>
+                  <div class="slider-info">
+                    <p>$15.00</p>
+                    <h4>Shinbone beef</h4>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide-img">
+                    <img src="paralax/slider1/image-33.jpg" alt="image" />
+                  </div>
+                  <div class="slider-info">
+                    <p>$15.00</p>
+                    <h4>Grilled skewers</h4>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide-img"><img src="paralax/slider1/image-34.jpg" alt="image" /></div>
+                  <div class="slider-info">
+                    <p>$19.99</p>
+                    <h4>Steak and chips</h4>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide-img"><img src="paralax/slider1/image-35.jpg" alt="image" /></div>
+                  <div class="slider-info">
+                    <p>$17.99</p>
+                    <h4>Skewers of meat</h4>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide-img"><img src="paralax/slider1/image-36.jpg" alt="image" />
+                    <div class="slider-info">
+                      <p>$9.99</p>
+                      <h4>Pork beef</h4>
+                    </div></div>
+                  
+                </li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </section>
+  </main>
+  
+  <div class="placeholder"></div>
+  <section class="footer" >
+    <div class="container" >
+      <div class="footer-items">
+        <div class="footer-logo">
+          <a href=""><img src="Logos/logo-1.png" alt=""></a>
+        </div>
+        <div class="footer-description">
+          <span>We don't care if we're doing haute cuisine or burgers and pizza.</span>
+          <spn>We just do it right. Always.</span>
+        </div>
+        <div class="footer-logos">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <span>© 2017 Gourmet - info@restaurant.com - +02 123458992 - Wall Street Avenue 502, New York - Restaurant Template Handmade by schiocco.io</span>
+  </div>
+</section>
+
+<div class="scroll-to-top" id="scrollToTop">
+  &#8679; 
+</div>
+
+
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+  
+  <script>
+    // sticky navbar
+  
+
+
+// document.querySelector('.hamburger').addEventListener('click', function() {
+//         document.querySelector('.links').classList.toggle('show');
+//     });
+
+    // const sidebarClose = document.querySelector('.sidebar-close');
+
+    // const sidebarOpen = document.querySelector('.sidebar-open');
+
+    // sidebarOpen.addEventListener("click", ()=> {
+    //   navbar.classList.add("active");
+    // });
+
+    // swiper
+    // document.addEventListener("DOMContentLoaded", function () {
+    //     new Splide(".splide2", {
+    //       type: "loop",
+    //       autoplay: "play",
+    //       perPage: 5,
+    //       breakpoints: {
+    //     1200: {
+    //       perPage: 4,
+    //     },
+    //     992: {
+    //       perPage: 3,
+    //     },
+    //     768: {
+    //       perPage: 2,
+    //     },
+    //     576: {
+    //       perPage: 1,
+    //     },
+    //   },
+    //     }).mount();
+    //   });
+
+    //   document.addEventListener("DOMContentLoaded", function () {
+    //     new Splide(".splide1", {
+    //       type: "loop",
+    //       autoplay: "play",
+    //       perPage: 2,
+    //      breakpoints:{
+    //       768: {
+    //       perPage: 1,
+    //     },
+    //      }
+    //     }).mount();
+    //   });
+
+
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  
+</body>
+</html>
